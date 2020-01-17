@@ -5,6 +5,7 @@
 # Add by (soramon)
 .vscode
 /app/static
+/postgres_data
 
 ### Django ###
 *.log
