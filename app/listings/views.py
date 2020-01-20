@@ -30,7 +30,7 @@ def listing(request, listing_id):
 
 
 def search(request):
-  query_list = Listing.objects.order_by('-list_date')
+  query_list = Listing.objects.order_by('-list_date').filter(is_published=True)
 
   # Keywords
   if 'keywords' in request.GET:
