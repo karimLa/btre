@@ -15,8 +15,6 @@ def login(request):
       messages.error(request, 'Your creadentials are invalid')
       return redirect('login')
     
-    print(user)
-    
     auth.login(request, user)
     messages.success(request, 'You are now logged in')
     return redirect('dashboard')
